@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shubham | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+<!-- Header with navigation -->
+<header>
+  <nav>
+    <!-- Logo in top left corner -->
+    <div class="logo">My Portfolio</div>
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero section -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="hero-image">
+      <img src="image.jpg" alt="Shubham" />
+    </div>
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Shubham Ghugare</span></h1>
+      <p class="subtitle">Frontend Developer | Web Designer | CSE Student</p>
+      <p>Building creative, responsive & modern web experiences.</p>
+      <a href="#contact" class="btn">Hire Me</a>
+    </div>
+  </div>
+</section>
+
+<!-- About section -->
+<section class="about" id="about">
+  <h2>About Me</h2>
+  <div class="about-content">
+    <div class="profile-img-wrapper" id="openPhotoModal">
+      <img src="myimage.jpg" alt="Shubham profile picture" class="profile-img" />
+    </div>
+    <div class="about-text">
+      <p>I'm Shubham Ghugare, a Computer Science student at Sant Gajanan Maharaj College of Engineering, Mahagaon, driven by curiosity, creativity, and a passion for technology. I love coding, exploring new ideas, and taking on challenges that push my limits and help me grow.
+      I believe learning never stops—and I enjoy diving into new concepts, tools, and technologies that shape the future.
+       My Goal: To become a professional, all-rounder engineer—skilled across multiple areas, adaptable, and capable of delivering smart, impactful solutions.
+       I'm committed to building strong technical skills, improving every single day, and making a meaningful contribution wherever I go.</p>
+      <div class="social-links">
+        <a href="https://github.com/ShubhamGhugare/portfolio" target="_blank" class="social-link">GitHub</a>
+        <a href="https://www.linkedin.com/in/shubham-ghugare-779939383?utm_source=share_via&utm_content=profile&utm_medium=member_androidRR" target="_blank" class="social-link">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Photo Modal -->
+<div id="photoModal" class="photo-modal">
+  <div class="photo-modal-content">
+    <img src="/myimage.jpg" alt="Shubham" />
+    <button class="close-photo-modal">✕</button>
+  </div>
+</div>
+
+<!-- Skills section -->
+<section class="skills" id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill" data-skill="html">HTML</div>
+    <div class="skill" data-skill="css">CSS</div>
+    <div class="skill" data-skill="javascript">JavaScript</div>
+    <div class="skill" data-skill="c">C Programming</div>
+    <div class="skill" data-skill="python">Python</div>
+    <div class="skill" data-skill="git">Git & GitHub</div>
+    <div class="skill" data-skill="uiux">UI/UX</div>
+  </div>
+</section>
+
+<!-- Skill Modal -->
+<div id="skillModal" class="skill-modal">
+  <div class="skill-modal-content">
+    <h3 id="modalTitle"></h3>
+    <p id="modalDescription"></p>
+    <button class="close-modal">Close</button>
+  </div>
+</div>
+
+<!-- Projects section -->
+<section class="projects" id="projects">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="project" data-project="landing">
+      <h3>Landing Page</h3>
+      <img src="landpage.jpg" alt="Landing Page" loading="lazy" />
+      <p>Responsive landing page using HTML &amp; CSS.</p>
+    </div>
+    <div class="project" data-project="portfolio">
+      <h3>Portfolio Website</h3>
+      <img src="project2.jpg" alt="Portfolio Website" />
+      <p>Personal portfolio with animations.</p>
+    </div>
+    <div class="project" data-project="weather">
+      <h3>Temperature Converter</h3>
+      <img src="project1.jpg" alt="Temperature Converter" loading="lazy" />
+      <p>JavaScript app using API.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Project Modal -->
+<div id="projectModal" class="project-modal">
+  <div class="project-modal-content">
+    <h3 id="projectModalTitle"></h3>
+    <p id="projectModalDesc"></p>
+    <ul id="projectModalPoints"></ul>
+    <button class="close-project-modal">Close</button>
+  </div>
+</div>
+
+<!-- Contact section -->
+<section class="contact" id="contact">
+  <h2>Contact Me</h2>
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" placeholder="Your Message" required></textarea>
+    <button class="btn">Send Message</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2026 Shubham | All Rights Reserved</p>
+  <button id="backToTop" class="back-to-top">↑</button>
+  </footer>
+<script src="javascript.js"></script>
+</body>
+</html>
